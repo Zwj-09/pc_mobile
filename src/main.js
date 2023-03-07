@@ -7,20 +7,17 @@ import "element-plus/dist/index.css";
 
 import "./assets/reset.css";
 
-function autoResponse(width = 750) {
-  const target = document.documentElement || document.body;
-  target.style.fontSize = `${target.clientWidth / 70}px`;
-}
+import "amfe-flexible";
 
-autoResponse();
+// function autoResponse(width = 750) {
+//   const target = document.documentElement || document.body;
+//   target.style.fontSize = `${target.clientWidth / 70}px`;
+// }
 
-window.addEventListener("resize", autoResponse);
+// autoResponse();
 
-import * as ElementPlusIconsVue from "@element-plus/icons-vue";
+// window.addEventListener("resize", autoResponse);
 
 const app = createApp(App);
-for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
-  app.component(key, component);
-}
 
 app.use(store).use(router).use(ElementPlus).mount("#app");

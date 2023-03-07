@@ -1,9 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 
-const routes = [
-  { path: "/", redirect: "/home" },
-  { path: "/home", name: "Home", component: () => import("../views/Home.vue") },
-];
+import Home from "../views/Home.vue";
+
+const routes = [{ path: "/", name: "Home", component: Home }];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
