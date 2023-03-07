@@ -1,30 +1,19 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div id="app">
+    <router-view />
+  </div>
 </template>
 
 <style lang="less">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-size: 18px;
+  // background: url("./assets/bg.png");
+  background: url("https://video.hifotobooth.com/parse/files/654c6238236e4b61ad984a182d6a52b3/f1f2f056726373bc9da394967bebe00c_6fc180a9dc92101cc15d56553d902a62_th.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 </style>
